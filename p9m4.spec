@@ -7,7 +7,6 @@ License:	GPL v2
 Group:		Applications/Science
 Source0:	http://www.cs.unm.edu/%7Emccune/prover9/gui/%{name}-v%(echo %{version} | tr -d .).tar.gz
 # Source0-md5:	fe031fbc49953c580f54c11864f31a36
-Source1:	%{name}-setup.py
 Patch0:		%{name}-64bit.patch
 Patch1:		%{name}-python2.6.patch
 Patch2:		%{name}-use-inst-paths.patch
@@ -36,8 +35,6 @@ install %{SOURCE1} .
 find '(' -name '*~' -o -name '*.orig' ')' -print0 | xargs -0 -r -l512 rm -f
 
 %build
-export CFLAGS="%{rpmcflags}"
-%{__python} %{name}-setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
