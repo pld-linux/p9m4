@@ -17,6 +17,7 @@ BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	prover9 >= 2007
 Requires:	python-libs
 Requires:	python-modules
+Requires:	python-wxPython
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
