@@ -2,7 +2,7 @@ Summary:	GUI for Prover9 and Mace4
 Summary(pl.UTF-8):	Środowisko graficzne dla Prover9 i Mace4
 Name:		p9m4
 Version:	0.5
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		Applications/Science
 Source0:	http://www.cs.unm.edu/%7Emccune/prover9/gui/%{name}-v%(echo %{version} | tr -d .).tar.gz
@@ -14,6 +14,7 @@ URL:		http://www.cs.unm.edu/~mccune/prover9/gui/
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
+Requires:	prover9 >= 2007
 Requires:	python-libs
 Requires:	python-modules
 BuildArch:	noarch
