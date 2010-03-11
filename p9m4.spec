@@ -5,7 +5,7 @@ Version:	0.5
 Release:	1
 License:	GPL v2
 Group:		Applications/Science
-Source0:	http://www.cs.unm.edu/%7Emccune/prover9/gui/%{name}-v%(echo %{version} | tr -d .).tar.gz
+Source0:	http://www.cs.unm.edu/~mccune/prover9/gui/%{name}-v%(echo %{version} | tr -d .).tar.gz
 # Source0-md5:	fe031fbc49953c580f54c11864f31a36
 Patch0:		%{name}-64bit.patch
 Patch1:		%{name}-python2.6.patch
